@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>VIDGAME</title>
+        <link rel="icon" type="imagen/jpeg" href="img/logo.jpeg">
+        <style>
+            body{
+    background-image: url(img/fondoM.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment:fixed
+}
+@media (max-width: 768px) {
+    body {
+        background-image: url(img/fondoM-v.jpeg);
+    }
+    .home {
+        top: 20px;
+        right: 10px;
+}
+}
+.home {
+    position: absolute;
+    top: 250px;
+    right: 5%;
+    width: 75px;      
+    height: 75px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+.phone {
+    width: 350px;
+    height: 800px;
+    background: rgba(0,0,0,0.5); /* Puedes reemplazarlo con un fondo */
+    border-radius: 40px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 20px 25px;
+    margin-left: 1px;
+    position: absolute;
+    left: 420px;  /* mueve horizontal */
+    top: 330px; 
+}
+.app-icon {
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            transition: transform 0.2s ease;
+        }
+.app-icon img {
+            width: 65px;
+            height: 65px;
+            border-radius: 15px;
+            transition: transform 0.2s ease;
+        }
+        .app-icon p {
+            color: white;
+            font-size: 12px;
+            margin-top: 5px;
+            text-shadow: 0 0 5px #000;
+        }
+        .pop {
+            transform: scale(1.25);
+        }
+        </style>
+    </head>
+    <body>
+        <a href="INDEX.html" class="home"></a>
+        <div class="phone">
+        <div class="app-icon" onclick="pop(this)">
+            <img src="img/appvalle.png">
+            <p>Stardew Valley</p>
+        </div>
+        <div class="app-icon" onclick="pop(this)">
+            <img src="img/ghost.jpeg">
+            <p>the ghost</p>
+        </div>
+        <div class="app-icon" onclick="pop(this)">
+            <img src="img/icon3.png">
+            <p>Juego 3</p>
+        </div>
+        <div class="app-icon" onclick="pop(this)">
+            <img src="img/icon4.png">
+            <p>Juego 4</p>
+        </div>
+        <!-- agrega más si quieres -->
+    </div>
+    <script>
+        function pop(icon) {
+            icon.classList.add("pop");
+            setTimeout(() => {
+                icon.classList.remove("pop");
+            }, 200);
+        }
+    </script>
+    </body>
+</html>
