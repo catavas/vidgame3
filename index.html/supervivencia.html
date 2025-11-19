@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            body{
+    height: 100vh;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 3px;
+    background-color: black; 
+    background-color: #0a0f1f; 
+    background-image: radial-gradient(circle at center, #1e6c1a, #0a0f1f 70%);
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background: radial-gradient(circle at center, #0b0f14, #02060a);
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 2px solid #13471d;
+    box-shadow: 0 0 15px #0d6610
+}
+p{color: azure;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+button {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 46%;
+}
+.definicion {
+    position: relative;
+    transition: all 0.4s ease;
+    transform-origin: right center ;
+    z-index: 1;
+    color: azure;
+}
+.definicion:hover {
+    transform: scale(1.08); 
+    background-color: #0b5c19;
+    box-shadow: 0 0 20px #3ad842; 
+}
+.definicion .extra {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.definicion:hover .extra {
+    opacity: 1;
+}
+video {
+    border-radius: 2%;
+    border: solid #083407;
+    transition: all 0.4s ease;
+    transform-origin: left center;
+    position: relative;
+    z-index: 1;
+}
+video:hover {
+    transform: scale(1.15) translate(55px); 
+    box-shadow: 0 0 35px #1aff66; 
+    filter: brightness(1.25); 
+    z-index: 2;
+}
+header{
+    background-image: url(img/s.png);
+    background-size: cover;
+    background-position: center;height: 30vh;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+        </style>
+    </head>
+<body>
+    <header>
+        <a href="INDEX.html">
+        <button><img src="img/bk.png" alt="imagen" width="70px" height="40px"></button>
+        </a>
+        <h1 style="font-size: 2.5em; margin: 0;display: inline-block">SUPERVIVENCIA</h1>
+    </header>
+    <p>¡En un entorno peligroso, la supervivencia es tu única meta!</p>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/gro.jpg">
+            <source src="vid/gro.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d6619;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">GROUNDED</h2>
+            <p>El mundo es un lugar vasto, hermoso y peligroso, sobre todo cuando te han reducido al tamaño de una hormiga.</p>
+            <p class="extra"> ¿Podrás prosperar entre las hordas de insectos gigantes, luchando por sobrevivir a los peligros del jardín?</p>
+        </div>
+    </div> 
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/terraria.jpg">
+            <source src="vid/te.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d660e;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">TERRARIA</h2>
+            <p>En Peak, la única esperanza de salir de la misteriosa isla es subiendo hasta la cima de la montaña del centro. ¿Tienen lo que hace falta para subir al PICO?</p>
+            <p class="extra"></p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/sub.jpg">
+            <source src="vid/sub.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d6613;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">SUBNAUTICA</h2>
+            <p>lo que iba a se un viaje tranquilo se convierte en una aventura que consiste en conducir una autocaravana de vuelta a casa.</p>
+            <p class="extra">tu mision:mantener tu autocarabana en marcha,a tu tripulacion con vida y tu cordura... pendiendo de un hilo</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/Tomb.jpg">
+            <source src="vid/tom.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d6626;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">Rise of the Tomb Raider</h2>
+            <p>¡Graba a tus amigos haciendo cosas aterradoras para hacerte viral en SpöökTube! (Recomendamos  ir en compañía).</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/Uncharted.jpg">
+            <source src="vid/un.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d6616;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">UNCHARTED</h2>
+            <p>Controla a Cody y May, miembros de una pareja separada que, por un hechizo mágico, se convirtieron en muñecos. Atrapados en un mundo fantástico donde lo impredecible se esconde en todos los rincones, deben superar juntos, aunque de mala gana, el desafío de salvar su relación.</p>
+        </div>
+    </div>
+</body>
+</html>

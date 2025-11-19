@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            body{
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 20px;
+    background-color: #0a0f1f; 
+    background-image: radial-gradient(circle at center, #1a2a6c, #0a0f1f 70%);
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+}
+h1{
+    background: radial-gradient(circle at center, #0b0f14, #02060a);
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 2px solid #132e47;
+    box-shadow: 0 0 15px #0d3b66;
+    text-shadow: 0 0 10px #05116e
+}
+p{color: azure;}
+.definicion{
+    color: azure;
+}
+button {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 46%;
+}
+.definicion {
+    position: relative;
+    transition: all 0.4s ease;
+    transform-origin: right center ;
+    z-index: 1;
+}
+.definicion:hover {
+    transform: scale(1.08); 
+    background-color: #0b175c;
+    box-shadow: 0 0 20px #3a3ad8; 
+}
+.definicion .extra {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.definicion:hover .extra {
+    opacity: 1;
+}
+video {
+    border-radius: 2%;
+    border: solid #0e1370;
+    transition: all 0.4s ease;
+    transform-origin: left center;
+    position: relative;
+    z-index: 1;
+}
+video:hover {
+    transform: scale(1.15) translate(55px); 
+    box-shadow: 0 0 35px #1a1eff; 
+    filter: brightness(1.25); 
+    z-index: 2;
+}
+header{
+    background-image: url(../img/c.png);
+    background-size: cover;background-position: center;
+    height: 30vh;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+        </style>
+    </head>
+<body>
+    <header>
+        <a href="INDEX.html">
+        <button><img src="img/bk.png" alt="imagen" width="70px" height="40px"></button>
+        </a>
+        <h1 style="font-size: 2.5em; margin: 0;display: inline-block">COOPERATIVOS</h1>
+    </header>
+    <p>¡No hay competencias, solo trabajo en equipo y diversión!</p>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/minecraft.jpg">
+            <source src="vid/minecraft.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d3b66;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">MINECRAFT</h2>
+            <p>Adéntrate en un mundo infinito donde cada bloque puede convertirse en algo extraordinario.
+Construye, explora y sobrevive mientras enfrentas criaturas, descubres templos y te aventuras por tierras desconocidas.</p>
+            <p class="extra">⛏️ De día, crea y da forma a tu mundo. De noche, prepárate para luchar. En Minecraft, la única regla es tu imaginación</p>
+        </div>
+    </div> 
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/peak.jpg">
+            <source src="vid/peak.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d3b66;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">PEAK</h2>
+            <p>Cada paso es un desafío, cada respiración una victoria.
+El viento ruge, la nieve corta, y el silencio grita tu nombre.
+No hay mapas, no hay segundas oportunidades…
+Solo tú, tu instinto… y la cima </p>
+            <p class="extra">🏔️no todos nacieron para alzar la cumbre... ¿Tienen lo que hace falta para subir al PICO?</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/RVThereYetavif.avif">
+            <source src="vid/there.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d3b66;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">RV THERE YET?</h2>
+            <p>lo que iba a se un viaje tranquilo se convierte en una aventura que consiste en conducir una autocaravana de vuelta a casa.</p>
+            <p class="extra">🌲tu mision:mantener tu autocarabana en marcha,a tu tripulacion con vida y tu cordura... pendiendo de un hilo 🚐</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/De qué se trata Content Warning.png">
+            <source src="vid/CONTENT WARNING.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d3b66;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">CONTENT WARNING</h2>
+            <p>Luces encendidas. Cámara grabando.
+Entra al abismo con tus amigos, pero recuerda: aquí, el miedo no es un filtro…
+Es real.
+Cada paso puede ser tu último take, cada grito, tu último audio (Recomendamos  ir en compañía).</p>
+<p class="extra">🎥Lo que grabes… te perseguirá💀</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/it-takes-two.jpg">
+            <source src="vid/It Takes Two.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d3b66;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">IT TAKES TWO</h2>
+            <p>Un mundo loco, lleno de retos imposibles.
+Un dúo que no siempre se entiende, pero que no puede rendirse.
+Entre acertijos, peleas y carcajadas, descubrirán algo más que un final feliz.</p>
+<p class="extra">Cuando el trabajo en equipo salva algo más que el día. ⚡</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            body{
+    height: 100vh;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 3px;
+    background-color: black; 
+    background-color: #0a0f1f; 
+    background-image: radial-gradient(circle at center, #28e6ff, #112e34 70%);
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background: radial-gradient(circle at center, #0b0f14, #02060a);
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 2px solid #133e47;
+    box-shadow: 0 0 15px #0d5a66
+}
+p{color: azure;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+button {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 46%;
+}
+.definicion {
+    position: relative;
+    transition: all 0.4s ease;
+    transform-origin: right center ;
+    z-index: 1;
+    color: azure;
+}
+.definicion:hover {
+    transform: scale(1.08); 
+    background-color: #009f8f;
+    box-shadow: 0 0 20px #3ad5d8; 
+}
+.definicion .extra {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.definicion:hover .extra {
+    opacity: 1;
+}
+video {
+    border-radius: 2%;
+    border: solid #072434;
+    transition: all 0.4s ease;
+    transform-origin: left center;
+    position: relative;
+    z-index: 1;
+}
+video:hover {
+    transform: scale(1.15) translate(55px); 
+    box-shadow: 0 0 35px #1ad1ff; 
+    filter: brightness(1.25); 
+    z-index: 2;
+}
+header{
+    background-image: url(img/de.png);
+    background-size: cover;
+    background-position: center;height: 30vh;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+        </style>
+    </head>
+<body>
+    <header>
+        <a href="INDEX.html">
+        <button><img src="img/bk.png" alt="imagen" width="70px" height="40px"></button>
+        </a>
+        <h1 style="font-size: 2.5em; margin: 0;display: inline-block">CARRERAS</h1>
+    </header>
+    <p>Velocidad, precisión y un solo objetivo: llegar antes que todos</p>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/Forza.jpg">
+            <source src="vid/for.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d5366;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">forza horizon</h2>
+            <p>En Forza Horizon no solo conduces… brillas, compites y dominas cada camino.
+Desde desiertos ardientes hasta ciudades vibrantes, cada carretera te invita a romper tus propios límites.</p>
+            <p class="extra">🏁Acelera. Derrapa. Gana. Vive el festival🚗</p>
+            <p class="extra">El mundo es tu pista. El horizonte, tu destino.
+Motores rugiendo, curvas imposibles y un festival que nunca duerme.</p>
+        </div>
+    </div> 
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/f1.jpg">
+            <source src="vid/f1.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d5366;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">F1® 25</h2>
+            <p>Cada curva exige valentía, cada milisegundo define tu destino.
+Aquí no hay margen para errores: solo reflejos, estrategia y pura habilidad.</p>
+            <p class="extra">Semáforos en rojo. El mundo en silencio.
+Y en un instante… 1, 2, 3, GO</p>
+            <p class="extra">Siente la potencia del monoplaza, domina los circuitos más icónicos y escribe tu nombre entre los grandes del automovilismo</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/st.jpg">
+            <source src="vid/st.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d5366;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">Stumble Guys</h2>
+            <p>Esquiva obstáculos imposibles, empuja (con cariño) a tus rivales y lucha por llegar a la meta en un festival de colores, locura y diversión sin fin.</p>
+            <p class="extra">donde cada partida es un desastre divertido esperando pasar</p>
+            <p class="extra">Correr, saltar, chocar y caer… ¡mucho caer!
+En Stumble Guys no importa ser perfecto, importa seguir avanzando aunque todo explote a tu alrededor</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/steep.jpg">
+            <source src="vid/steep.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d5366;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">Steep™</h2>
+            <p>Deslízate sobre nieve fresca, surca el cielo en wingsuit, domina rutas imposibles y conquista las montañas más implacables del planeta.</p>
+<p class="extra">Aquí, la libertad se mide en altura… y la adrenalina, en cada segundo.</p>
+<p class="extra">El viento golpea tu rostro, la nieve cruje bajo tus pies y el abismo te invita a saltar, la aventura no se juega: se siente en cada caída libre y en cada descenso al límite</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/MX.jpg">
+            <source src="vid/MX.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #0d5366;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">MXGP2</h2>
+            <p>Aquí no basta con acelerar: hay que controlar la máquina, la pista y el caos a tu alrededor.
+Compite contra los mejores pilotos, desafía circuitos extremos y siente la adrenalina pura del motocross profesional.</p>
+            <p class="extra">velocidad, técnica y valentía en su máxima expresión.</p>
+            <p class="extra">El rugido del motor, el olor a tierra mojada y una salida que lo decide todo, cada salto es una apuesta y cada curva, una batalla cuerpo a cuerpo</p>
+        </div>
+    </div>
+</body>
+</html>

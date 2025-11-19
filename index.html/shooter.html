@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            body{
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 20px;
+    background-color: #0a1f0a; 
+    background-image: radial-gradient(circle at center, #1a6c29, #0a1f0a 70%);
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+}
+h1{
+    background: radial-gradient(circle at center, #0b0f14, #02060a);
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 2px solid #13471e;
+    box-shadow: 0 0 15px #0d661d;
+    text-shadow: 0 0 10px #056e18
+}
+p{color: azure;}
+.definicion{
+    color: azure;
+}
+button {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 46%;
+}
+.definicion {
+    position: relative;
+    transition: all 0.4s ease;
+    transform-origin: right center ;
+    z-index: 1;
+}
+.definicion:hover {
+    transform: scale(1.08); 
+    background-color: #0b5c13;
+    box-shadow: 0 0 20px #3ad85c; 
+}
+.definicion .extra {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.definicion:hover .extra {
+    opacity: 1;
+}
+video {
+    border-radius: 2%;
+    border: solid #0e7025;
+    transition: all 0.4s ease;
+    transform-origin: left center;
+    position: relative;
+    z-index: 1;
+}
+video:hover {
+    transform: scale(1.15) translate(55px); 
+    box-shadow: 0 0 35px #1aff22; 
+    filter: brightness(1.25); 
+    z-index: 2;
+}
+header{
+    background-image: url(img/sh.png);
+    background-size: cover;
+    background-position: center;height: 30vh;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+        </style>
+    </head>
+<body>
+    <header>
+        <a href="INDEX.html">
+        <button><img src="img/bk.png" alt="imagen" width="70px" height="40px"></button>
+        </a>
+        <h1 style="font-size: 2.5em; margin: 0;display: inline-block">SHOOTER</h1>
+    </header>
+    <p>Silencioso, estratégico… imparable</p>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/ti.webp">
+            <source src="vid/TI.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #468c5e;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">TITANFALL 2</h2>
+            <p>Cada golpe, cada llave y cada segundo es una guerra por sobrevivir y dominar. lleva el combate al extremo, mostrando la fuerza, la técnica y el corazón de los peleadores como nunca antes</p>
+            <p class="extra">💥 En este lugar, solo los valientes triunfan</p>
+            <p class="extra">Construye tu leyenda, entrena sin descanso y enfréntate a rivales que buscan exactamente lo mismo que tú: la gloria del octágono.</p>
+        </div>
+    </div> 
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/val.jpg">
+            <source src="vid/val.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #468c5e;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">Valorant</h2>
+            <p>En el golf, cada golpe es una decisión y cada silencio vale oro te lleva a campos legendarios donde la precisión, la estrategia y la calma definen a los verdaderos campeones</p>
+            <p class="extra">🌤️ Respira, apunta… y deja que el golpe hable por ti.</p>
+            <p class="extra">Ajusta tu swing, lee el viento, controla la potencia y enfréntate a desafíos que pondrán a prueba tu habilidad en cada hoyo.</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/hel.avif">
+            <source src="vid/hel.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #468c5e;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">Helldivers 2</h2>
+            <p>Aquí no necesitas un estadio: tu sala es la cancha, Lanza, golpea, esquiva y celebra mientras compites en deportes llenos de energía, color y movimiento real</p>
+            <p class="extra">✨El deporte es más divertido cuando tú eres el control.</p>
+            <p class="extra">Desde el tenis hasta el chambara, pasando por fútbol, vóleibol y bolos, cada partido es una mezcla perfecta de diversión y desafío.</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/rem.jpg">
+            <source src="vid/rem.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #468c5e;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">Remnant II</h2>
+            <p>Saltos imposibles, mates que rompen la física y jugadas tan épicas que solo pueden pasar aquí.
+En Playgrounds 2, el baloncesto no es serio… es espectacular, exagerado y lleno de estilo.</p>
+<p class="extra">💫 Salta, vuela, anota… y hazlo con estilo🏀</p>
+<p class="extra">Forma tu equipo, desbloquea leyendas, encadena combos imposibles y domina canchas de todo el mundo con jugadas que harían temblar a la NBA real.</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/re.webp">
+            <source src="vid/re.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #468c5e;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">Ready or Not</h2>
+            <p>Aquí el fútbol no es un deporte… es una historia de valor, amistad y jugadas imposibles.
+Cada pase es una promesa, cada tiro es un rayo que rompe el cielo y cada partido es una batalla épica por alcanzar la gloria.</p>
+            <p class="extra">⚽juega con pasión, sueña en grande y dispara directo al corazón de la victoria Porque en esta cancha… los milagros también se entrenan🔥</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/Escape.webp">
+            <source src="vid/esc.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #468c5e;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">Escape From Tarkov</h2>
+            <p>Desde coches legendarios hasta prototipos futuristas, cada vehículo es una obra maestra que espera ser dominada en los circuitos más icónicos del mundo.</p>
+            <p class="extra">conduce con arte, compite con pasión Porque aquí, la carretera es una experiencia perfecta.</p>
+            <p class="extra">No es solo velocidad. Es precisión.
+Es sentir cada detalle del asfalto, cada milímetro de agarre y cada latido del motor</p>
+        </div>
+    </div>
+</body>
+</html>

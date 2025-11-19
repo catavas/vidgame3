@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            body{
+    height: 100vh;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 3px;
+    background-color: black; 
+    background-color: #0a0f1f; 
+    background-image: radial-gradient(circle at center, #3b1a6c, #0a0f1f 70%);
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background: radial-gradient(circle at center, #0b0f14, #02060a);
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 2px solid #201347;
+    box-shadow: 0 0 15px #280d66
+}
+p{color: azure;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+button {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 46%;
+}
+.definicion {
+    position: relative;
+    transition: all 0.4s ease;
+    transform-origin: right center ;
+    z-index: 1;
+    color: azure;
+}
+.definicion:hover {
+    transform: scale(1.08); 
+    background-color: #320b5c;
+    box-shadow: 0 0 20px #773ad8; 
+}
+.definicion .extra {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.definicion:hover .extra {
+    opacity: 1;
+}
+video {
+    border-radius: 2%;
+    border: solid #180734;
+    transition: all 0.4s ease;
+    transform-origin: left center;
+    position: relative;
+    z-index: 1;
+}
+video:hover {
+    transform: scale(1.15) translate(55px); 
+    box-shadow: 0 0 35px #851aff; 
+    filter: brightness(1.25); 
+    z-index: 2;
+}
+header{
+    background-image: url(../img/hma.png);
+    background-size: cover;
+    background-position: center;height: 30vh;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+        </style>
+    </head>
+<body>
+    <header>
+        <a href="INDEX.html">
+        <button><img src="img/bk.png" alt="imagen" width="70px" height="40px"></button>
+        </a>
+        <h1 style="font-size: 2.5em; margin: 0;display: inline-block">MUNDO ABIERTO</h1>
+    </header>
+    <p>La aventura empieza donde tú decides</p>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/GTA.avif">
+            <source src="vid/gta.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #3b0d66;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">GTA V</h2>
+            <p>En Los Santos, cada calle cuenta una historia… y casi todas terminan en explosiones, persecuciones o dinero fácil.Aquí no se juega: se sobrevive, se conquista y se manda.Tres vidas, un mismo destino: romper las reglas y escribir tu propia leyenda.</p>
+            <p class="extra">🌆Prepárate para correr,disparar,volar y causar el mejor tipo de problemas, el lugar donde la libertad sabe a adrenalina pura💥</p>
+        </div>
+    </div> 
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/ARK.webp">
+            <source src="vid/ark.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #320d66;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">ARK</h2>
+            <p>Despiertas solo, desarmado y rodeado de criaturas que no deberían existir.
+Aquí, cada amanecer es una victoria y cada huella en la arena puede ser tu final.
+</p>
+            <p class="extra">🦖Forja tu historia entre dinosaurios, tribus y peligros sin fin la evolución está en tus manos🌴</p>
+            <p class="extra">
+Construye, caza, doma gigantes prehistóricos y crea tu propio reino salvaje.
+En ARK no solo sobrevives… te conviertes en la bestia más peligrosa de la isla.</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/bus.jpg">
+            <source src="vid/BUS.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #2c0d66;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">EURO TRUCK SIMULATOR 2</h2>
+            <p>Cruza ciudades, fronteras y paisajes infinitos mientras construyes tu propio imperio del transporte.
+Cada entrega completada es una victoria. Cada ruta, una historia</p>
+            <p class="extra">🚚Súbete, enciende el motor y deja que la carretera hable🚚</p>
+            <p class="extra">Kilómetros de asfalto, luces encendidas y el murmullo constante del motor.
+Aquí no hay prisa: hay destino, precisión y libertad.</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/FALL.jpeg">
+            <source src="vid/fall.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #2e0d66;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">FALLOUT 4</h2>
+            <p>Despiertas en un mundo que la guerra redujo a cenizas.
+Ruinas, mutantes y peligros acechan en cada esquina, pero también oportunidades…
+porque en el yermo, solo sobreviven los que toman su destino por la fuerza.</p>
+<p class="extra">☄️ El yermo espera a su nuevo héroe… o a su peor pesadilla🛠️</p>
+<p class="extra">Arma tu refugio, forja tu camino y decide quién vive, quién muere y qué queda en pie.
+Tu pasado quedó congelado… pero tu futuro está por escribirse</p>
+        </div>
+    </div>
+    <div class="definicion" style="display: flex; align-items: center; margin-bottom: 30px;">
+        <video width="450" controls poster="img/NMS.jpg">
+            <source src="vid/NMS.mp4" type="video/mp4">
+        </video>
+        <div class="definicion" style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+            padding: 15px;
+            background-color: #340d66;
+            border-radius: 10px;
+            color: white;
+        ">
+            <h2 style="margin-top: 0;">NO MAN'S SKY</h2>
+            <p>Despiertas en un planeta desconocido, rodeado de misterios, criaturas extrañas y tecnología olvidada.No hay caminos marcados… solo estrellas Y cada una es un destino posible.</p>
+            <p class="extra">🚀explora, sobrevive y crea tu propia historia entre las estrellas Porque allá afuera… siempre hay algo más por descubrir✨</p>
+            <p class="extra">Viaja entre galaxias, descubre mundos nunca vistos, mejora tu nave y deja tu huella en un cosmos infinito.
+En este universo, la aventura no termina: solo se expande</p>
+        </div>
+    </div>
+</body>
+</html>
