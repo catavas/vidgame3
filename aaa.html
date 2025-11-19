@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>VIDGAME</title>
+    <link rel="icon" type="imagen/jpeg" href="img/logo.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+    margin: 0%;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: black;
+    padding: 20px;
+    background-color: #000;
+    background-image: radial-gradient(circle at center, rgba(255,255,255,0.15), rgba(0,0,0,1));
+    height: 100vh;
+    margin: 0;
+    letter-spacing:2px;
+    margin: 0; padding: 0;
+    overflow-x: hidden;
+}
+.menu {
+    list-style: none;
+    background-color: grey;
+    margin: 0%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 10; 
+    position: relative;
+    min-height: 70px;
+    align-items: center;
+}
+.menu > li {
+    position: relative;
+}
+.menu > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 15px;
+}
+.menu > li > a:hover {
+    background-color: rgb(98, 18, 18);
+}
+.menu ul {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    border-radius: 6px;
+    z-index: 9999;
+}
+.menu ul li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    background-color: #666;
+}
+.menu li:hover > ul {
+    display: block;
+}
+#expansion {
+    position: fixed;
+    inset: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    z-index: 0;
+    border-radius: 10%;
+    background-image: url('img/descarga.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: width 0.6s ease-out, height 0.6s ease-out, opacity 0.9s ease;
+    opacity: 0;
+    filter: brightness(0.8); 
+}
+#welcome:hover + #expansion {
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    border-radius: 0;
+    filter: brightness(0.4); 
+}
+#welcome-area {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5; 
+    pointer-events: none;
+}
+#welcome {
+    color: white;
+    font-size: 56px;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    pointer-events: auto;
+    user-select: none;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: color .18s ease, transform .18s ease;
+}
+#welcome:hover {
+    color: #9aff9a;
+    transform: scale(1.05);
+}
+h1 {
+    text-align: center;
+    position: relative;
+    z-index: 10; 
+    margin: 2%;
+}
+.menu > li {
+    position: relative;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 25px 30px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+.menu a:hover {
+    background-color: #9aff9a;
+    color: black;
+}
+.menu ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    z-index: 100;
+}
+.menu li:hover > ul {
+    display: block;
+}
+.menu ul li a {
+    width: 200px;
+}
+    </style>
+</head>
+<body>
+    <div id="welcome-area">
+        <h1 id="welcome">BIENVENIDO</h1>
+        <div id="expansion"></div>
+    </div>
+    <h1>VIDGAME</h1>
+    <ul class="menu">
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">CATEGORIAS</a>
+            <ul>
+                <li><a href="cooperativos.html">COOPERATIVOS</a></li>
+                <li><a href="terror.html">TERROR</a></li>
+                <li><a href="supervivencia.html">SUPERVIVENCIA</a></li>
+                <li><a href="mundo_abierto.html">MUNDO ABIERTO</a></li>
+                <li><a href="carreras.html">CARRERAS</a></li>
+                <li><a href="deportes.html">DEPORTES</a></li>
+                <li><a href="shooter.html">SHOOTER</a></li>
+            </ul>
+        </li>
+        <li><a href="#">CONSOLAS</a>
+            <ul>
+                <li><a href="movil.html">MOVIL</a></li>
+                <li><a href="#">NINTENDO SWITCH</a></li>
+                <li><a href="#">PC</a></li>
+                <li><a href="#">XBOX</a></li>
+                <li><a href="#">PLAYSTATION</a></li>
+            </ul>
+        </li>
+        <li><a href="#">NOTICIAS</a></li>
+        <li><a href="#">PLATAFORMAS</a>
+            <ul>
+                <li><a href="#">STEAM</a></li>
+                <li><a href="#">EPIC GAMES</a></li>
+                <li><a href="#">ORIGIN</a></li>
+                <li><a href="#">GOOGLE PLAY - APP STORE</a></li>
+                <li><a href="#">PLAYSTATION STORE - XBOX STORE - NINTENDO ESHOP</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
